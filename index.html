@@ -145,11 +145,11 @@
   <details class="settings" id="settings" open>
     <summary>連線設定</summary>
     <div class="fields">
-      <label>API Base URL（HTTPS，例如 https://llm.你的網域.com/v1）
-        <input type="text" id="endpoint" placeholder="https://llm.你的網域.com/v1" autocomplete="off" spellcheck="false">
+      <label>API Base URL（Worker 網址，例如 https://llm-proxy.你的子網域.workers.dev/v1）
+        <input type="text" id="endpoint" placeholder="https://llm-proxy.你的子網域.workers.dev/v1" autocomplete="off" spellcheck="false">
       </label>
-      <label>API Token（LM Studio / Bionic 的 Require Authentication token）
-        <input type="password" id="token" placeholder="只存在這個分頁的記憶體中" autocomplete="off">
+      <label>存取密碼（Worker 的 PASSWORD，只存在這個分頁的記憶體中）
+        <input type="password" id="token" placeholder="輸入存取密碼" autocomplete="off">
       </label>
       <label>模型 ID
         <input type="text" id="model" value="google/gemma-4-26b-a4b-qat" autocomplete="off" spellcheck="false">

@@ -1,0 +1,13 @@
+name = "llm-proxy"
+main = "src/index.js"
+compatibility_date = "2025-09-01"
+
+# 測試到期時間（台北時間 2026-10-17 00:00）。到期後 Worker 回傳 410，不再轉發。
+[vars]
+EXPIRES_AT = "2026-10-17T00:00:00+08:00"
+
+# 不要在這裡寫 PASSWORD、ORIGIN_URL：
+#   wrangler secret put PASSWORD
+#   wrangler secret put ORIGIN_URL
+#   wrangler secret put ALLOWED_ORIGIN
+# 本機測試用 .dev.vars（已加入 .gitignore）
